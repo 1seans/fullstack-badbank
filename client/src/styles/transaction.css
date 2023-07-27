@@ -1,0 +1,22 @@
+.transaction-container {
+  /* display: grid; */
+  place-items: center;
+  height: 200px;
+  padding-top: 151px;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.transaction-log {
+  text-align: center;
+  font-size: 1.2rem;
+}
