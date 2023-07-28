@@ -8,8 +8,9 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth2').Strategy;
 const session = require ('express-session');
 const { GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET } = require('./config/dev');
-const port = process.env.PORT || 5000;
 const path = require('path');
+const port = process.env.PORT || 5000;
+
 
 const app = express();
 app.use(express.json());
@@ -186,6 +187,9 @@ app.put('/update', (req, res) => {
 
 
 
+app.listen(3001, () => {
+  console.log('server is running on port 3001');
+});
 
   // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
