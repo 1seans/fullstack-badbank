@@ -7,7 +7,7 @@ import UserContext from '../context';
 
 import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
-import  GOOGLE_CLIENT_ID from '../../../server/config/client_id_export'
+import  GOOGLE_CLIENT_ID from '../../../config/client_id_export'
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email address').required('Required'),
@@ -108,7 +108,6 @@ function Login() {
             <br />
             <div>
               <LoginSocialGoogle
-                // client_id = {'929371683042-bf90kvf3prvhkkh73kk2kl7oeua0qser.apps.googleusercontent.com'}
                 client_id={GOOGLE_CLIENT_ID} 
                 scope="openid profile email"
                 discoveryDocs="claims_supported"

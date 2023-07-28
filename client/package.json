@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vite build",
+    "dev": "vite",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "aws s3 sync dist s3://fullstack.badbank"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.4.0",
